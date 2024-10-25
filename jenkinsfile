@@ -37,9 +37,9 @@ stages {
     }
     stage('Run in Daemon Mode') {
         steps {
-            bat 'docker rm -f my_container || exit 0'
+            bat 'docker rm -f 2342 || exit 0'
             // Running the Docker container in daemon mode
-            bat 'docker run -d --name my_container riddhi150/docker_image_isa2'
+            bat 'docker run -d --name 2342 riddhi150/docker_image_isa2'
             }
         }
     }
